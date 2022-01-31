@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "247e5bd9bea9aa49d878",
+    "revision": "16989eb60abd77395d2c",
     "url": "/buduj-z-zasadami/static/css/main.8db36101.chunk.css"
   },
   {
-    "revision": "247e5bd9bea9aa49d878",
-    "url": "/buduj-z-zasadami/static/js/main.247e5bd9.chunk.js"
+    "revision": "16989eb60abd77395d2c",
+    "url": "/buduj-z-zasadami/static/js/main.16989eb6.chunk.js"
   },
   {
     "revision": "981587391077a106d1f0",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/buduj-z-zasadami/static/media/header3.d9d36b65.jpg"
   },
   {
-    "revision": "88ee58629e4044474a42ef2a5e0b0497",
+    "revision": "1f7c9d4bdd54f274ba4fcbd0d49ebf06",
     "url": "/buduj-z-zasadami/index.html"
   }
 ];
