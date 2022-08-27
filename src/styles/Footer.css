@@ -4,7 +4,6 @@ footer {
 	color: white;
 	padding: 5px 0;
 	text-align: center;
-	text-transform: uppercase;
 	-webkit-box-shadow: 0 -1px 5px #20123c;
 	-moz-box-shadow: 0 -1px 5px #20123c;
 	box-shadow: 0 -1px 5px #20123c;
@@ -18,18 +17,20 @@ footer .footerContainer {
 footer .footerWrapper {
 	display: flex;
 
-	font-size: 14px;
+	font-size: 12px;
 	align-items: center;
 }
 footer .footerWrapper p {
 	color: white;
 	font-size: 14px;
+	text-transform: none;
 }
 footer .footerWrapper i {
 	margin: 0 5px;
 }
 
 footer p {
-	font-size: 10px;
+	text-transform: uppercase;
+	font-size: 8px;
 	color: #eeee;
 }

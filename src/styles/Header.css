@@ -1,8 +1,36 @@
+header {
+	flex-basis: 40vh;
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
+}
+
 header img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	min-height: 100%;
+}
+@media (max-width: 500px) {
+	header img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: auto;
+		min-height: 100%;
+	}
+}
+
+@media (min-width: 720px) {
+	header img {
+		top: -100px;
+	}
+}
+
+@media (min-width: 1080px) {
+	header img {
+		top: -300px;
+	}
 }

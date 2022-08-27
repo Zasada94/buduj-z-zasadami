@@ -1,32 +1,26 @@
 div.app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0 auto;
-  color: #222;
-}
-
-header {
-  flex-basis: 30vh;
-  position: relative;
-  overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0 auto;
+	color: #222;
+	align-items: center;
+	overflow: hidden;
 }
 
 main {
-  display: flex;
-  flex-grow: 1;
-  padding: 30px 0;
+	display: flex;
+	flex-grow: 1;
+	padding: 30px 0;
 }
 
 aside {
-  min-width: 240px;
+	min-width: 240px;
 }
 section.page {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 
-
-
 article:nth-child(1) {
-  font-size: 30px;
+	font-size: 30px;
 }
