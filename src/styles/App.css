@@ -7,7 +7,6 @@ div.app {
 	align-items: center;
 	overflow: hidden;
 }
-
 main {
 	display: flex;
 	justify-content: space-around;
@@ -16,8 +15,18 @@ main {
 	width: 90%;
 	max-width: 1200px;
 }
-aside {
-	min-width: 240px;
+
+.navWrapper {
+	position: fixed;
+	left: -180px;
+	min-width: 220px;
+	height: auto;
+	background-color: red;
+	border: 2px solid #20123c;
+	border-radius: 30px;
+}
+.navWrapper.show {
+	left: 0;
 }
 .blog {
 	width: 60%;
@@ -25,4 +34,19 @@ aside {
 
 article:nth-child(1) {
 	font-size: 30px;
+}
+
+@media (min-width: 720px) {
+	.navWrapper {
+		position: relative;
+		left: auto;
+	}
+	main {
+		display: flex;
+		justify-content: space-around;
+		flex-grow: 1;
+		padding: 30px 0;
+		width: 90%;
+		max-width: 1200px;
+	}
 }
