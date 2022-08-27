@@ -7,20 +7,20 @@ import Page from "./Page.js";
 import Footer from "./Footer.js";
 
 class App extends Component {
-  render() {
-    return (
-      <Router basename={process.env.PUBLIC_URL}>
-        <div className="app">
-          <header>{<Header />}</header>
-          <main>
-            <aside>{<Navigation />}</aside>
-            <section className="blog">{<Page />}</section>
-          </main>
-          <footer>{<Footer />}</footer>
-        </div>
-      </Router>
-    );
-  }
+	render() {
+		return (
+			<Router basename={process.env.PUBLIC_URL}>
+				<div className="app">
+					<header>{<Header />}</header>
+					<main>
+						<aside>{<Navigation />}</aside>
+						<section className="blog">{<Page />}</section>
+					</main>
+					<footer>{<Footer />}</footer>
+				</div>
+			</Router>
+		);
+	}
 }
 
 export default App;
