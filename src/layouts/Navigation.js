@@ -7,7 +7,7 @@ const list = [
 	{ name: "start", path: "/", exact: true },
 	{ name: "oferta", path: "/products" },
 	{ name: "kontakt", path: "/contact" },
-	{ name: "panel admina", path: "/login" },
+	{ name: "log-in", path: "/login" },
 ];
 
 const menu = list.map((item) => (
@@ -25,10 +25,19 @@ const Navigation = () => {
 				<ul>{menu}</ul>
 			</nav>
 			<div className="navButton">
-				<button onClick={() => setShow(!show)}>
-					<i class="fa-solid fa-arrow-right"></i>
-					<i class="fa-solid fa-arrow-left"></i>
-				</button>
+				<div onClick={() => setShow(!show)}>
+					<i
+						className={
+							show ? "show fa-solid fa-arrow-right" : "fa-solid fa-arrow-right"
+						}
+					></i>
+					<p>MENU</p>
+					<i
+						className={
+							show ? "show fa-solid fa-arrow-right" : "fa-solid fa-arrow-right"
+						}
+					></i>
+				</div>
 			</div>
 		</div>
 	);
