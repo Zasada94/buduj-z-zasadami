@@ -12,17 +12,17 @@ header img {
 	width: 100vw;
 	min-height: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px) and (orientation: portrait) {
 	header img {
-		position: absolute;
-		top: 0;
-		left: 0;
 		height: 100%;
 		width: auto;
-		min-height: 100%;
 	}
 }
-
+@media (max-width: 500px) and (orientation: landscape) {
+	header img {
+		top: -100px;
+	}
+}
 @media (min-width: 720px) {
 	header img {
 		top: -100px;
