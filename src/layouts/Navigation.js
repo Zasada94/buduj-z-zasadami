@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/Navigation.css";
-import { useState } from "react";
 
 const list = [
 	{ name: "start", path: "/", exact: true },
@@ -22,7 +21,7 @@ const Navigation = () => {
 	return (
 		<div className={show ? "show navWrapper" : "navWrapper"}>
 			<nav className="main">
-				<ul>{menu}</ul>
+				<ul onClick={() => setShow(!show)}>{menu}</ul>
 			</nav>
 			<div className="navButton">
 				<div onClick={() => setShow(!show)}>

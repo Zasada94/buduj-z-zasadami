@@ -9,14 +9,16 @@ div.app {
 }
 main {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: space-around;
 	flex-grow: 1;
-	padding: 30px 0;
+	margin: 0 0 100px 0;
 	width: 90%;
 	max-width: 1200px;
 }
 .blog {
-	width: 60%;
+	width: 80%;
 }
 
 article:nth-child(1) {
@@ -27,9 +29,12 @@ article:nth-child(1) {
 	main {
 		display: flex;
 		justify-content: space-around;
+		flex-direction: row;
 		flex-grow: 1;
-		padding: 30px 0;
 		width: 90%;
 		max-width: 1200px;
+	}
+	.blog {
+		width: 60%;
 	}
 }
