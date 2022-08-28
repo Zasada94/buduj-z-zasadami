@@ -1,0 +1,10 @@
+article {
+	color: #20123c;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+article:nth-child(n) h3 {
+	margin-bottom: 5px;
+}

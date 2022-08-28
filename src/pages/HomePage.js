@@ -4,7 +4,7 @@ import Article from "../components/Article";
 const articles = [
   {
     id: 1,
-    title: "Buduj z zasadami!",
+    title: "Buduj z Zasadami!",
     author: "Paweł Zasada",
   },
   {
