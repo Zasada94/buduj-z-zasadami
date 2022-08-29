@@ -5,6 +5,9 @@
 .products ul {
 	list-style: none;
 }
+.products {
+	max-width: 400px;
+}
 .products li {
 	margin-bottom: 20px;
 	max-width: 300px;
@@ -21,6 +24,8 @@
 	border-radius: 20px;
 	border: 2px solid #20123c;
 	background-color: #e7e2df;
+	text-align: center;
+	font-weight: 700;
 }
 
 .products a:hover {

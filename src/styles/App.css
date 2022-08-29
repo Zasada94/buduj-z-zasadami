@@ -21,13 +21,19 @@ main {
 .blog {
 	width: 80%;
 }
-
-article:nth-child(1) {
-	font-size: 30px;
-}
-
 h3 {
 	text-transform: none;
+	font-size: 28px;
+}
+article:nth-child(2) h3,
+article:nth-child(3) h3 {
+	font-size: 22px;
+}
+article p {
+	font-size: 18px;
+}
+article h1 {
+	font-size: 28px;
 }
 
 @media (min-width: 720px) {
@@ -40,6 +46,21 @@ h3 {
 		max-width: 1200px;
 	}
 	.blog {
-		width: 60%;
+		width: 50%;
+	}
+}
+@media (min-width: 1080px) {
+	h3 {
+		font-size: 30px;
+	}
+	article:nth-child(2) h3,
+	article:nth-child(3) h3 {
+		font-size: 24px;
+	}
+	article p {
+		font-size: 20px;
+	}
+	article h1 {
+		font-size: 30px;
 	}
 }
