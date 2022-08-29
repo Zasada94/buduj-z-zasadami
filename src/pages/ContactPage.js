@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/ContactPage.css";
 
 const FORM_ENDPOINT =
 	"https://public.herotofu.com/v1/6cd9ee40-2797-11ed-9d54-c9f9d2b00e7b";
@@ -13,8 +14,8 @@ const ContactForm = () => {
 	if (submitted) {
 		return (
 			<>
-				<h2>Thank you!</h2>
-				<div>We'll be in touch soon.</div>
+				<h2>Dziękujemy!</h2>
+				<div>Wkrótce się z Tobą skontaktujemy.</div>
 			</>
 		);
 	}
@@ -26,17 +27,19 @@ const ContactForm = () => {
 			method="POST"
 			target="_blank"
 		>
-			<div>
-				<input type="text" placeholder="Your name" name="name" required />
-			</div>
-			<div>
-				<input type="email" placeholder="Email" name="email" required />
-			</div>
-			<div>
-				<textarea placeholder="Your message" name="message" required />
-			</div>
-			<div>
-				<button type="submit"> Send a message </button>
+			<div className="formWrapper">
+				<div>
+					<input type="text" placeholder="Imię" name="name" required />
+				</div>
+				<div>
+					<input type="email" placeholder="E-mail" name="email" required />
+				</div>
+				<div>
+					<textarea placeholder="Twoja wiadomość" name="message" required />
+				</div>
+				<div>
+					<button type="submit"> Wyślij wiadomość </button>
+				</div>
 			</div>
 		</form>
 	);

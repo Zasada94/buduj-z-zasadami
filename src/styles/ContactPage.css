@@ -1,23 +1,67 @@
-.contact textarea {
+.formWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.formWrapper div {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.formWrapper textarea {
+	border: 1px solid #20123c;
+	border-radius: 5px;
 	font-size: 16px;
-	width: 80%;
+	width: 100%;
 	min-height: 200px;
 	margin: 20px 0;
 	line-height: 1.6;
+	-webkit-box-shadow: 1px 1px 5px 0px #20123c;
+	-moz-box-shadow: 1px 1px 5px 0px #20123c;
+	box-shadow: 1px 1px 5px 0px #20123c;
 }
 
-.contact button {
+.formWrapper button {
 	display: block;
-	margin: 0 20% 0 auto;
-	border: 2px solid black;
-	background-color: #fff;
+	border: 2px solid #20123c;
+	border-radius: 20px;
 	padding: 10px 20px;
 	cursor: pointer;
-	font-size: 20px;
+	font-size: 18px;
+	font-weight: 700;
 	transition: 0.2s;
+	color: #20123c;
+	background-image: linear-gradient(to right, #bdb6c6, white);
+	transition: 1s;
 }
 
-.contact button:hover {
-	color: yellow;
-	background-color: #000;
+.formWrapper button:hover {
+	background-image: linear-gradient(to right, #20123c, #bdb6c6);
+	color: white;
+}
+
+.formWrapper input {
+	border: 1px solid #20123c;
+	border-radius: 5px;
+	height: 25px;
+	margin-top: 10px;
+	width: 100%;
+	-webkit-box-shadow: 1px 1px 5px 0px #20123c;
+	-moz-box-shadow: 1px 1px 5px 0px #20123c;
+	box-shadow: 1px 1px 5px 0px #20123c;
+}
+
+@media (min-width: 720px) {
+	.formWrapper div {
+		width: 80%;
+	}
+}
+@media (min-width: 1080px) {
+	.formWrapper button {
+		padding: 10px 205x;
+		font-size: 20px;
+	}
 }
