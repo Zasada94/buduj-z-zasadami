@@ -1,22 +1,19 @@
 .products h2 {
 	margin-bottom: 20px;
+	display: inline-block;
+	max-width: 300px;
 }
 
 .products ul {
 	list-style: none;
 }
-.products {
-	max-width: 400px;
-}
+
 .products li {
 	margin-bottom: 20px;
-	max-width: 300px;
 	text-align: center;
 }
 .products a {
 	display: inline-block;
-	width: 100%;
-	height: 100%;
 	text-decoration: none;
 	color: #20123c;
 	padding: 2% 3%;
@@ -62,4 +59,9 @@
 	color: white;
 	background-color: #4a326c;
 	border-color: #bdb6c6;
+}
+@media (min-width: 1080px) {
+	.products li {
+		text-align: left;
+	}
 }

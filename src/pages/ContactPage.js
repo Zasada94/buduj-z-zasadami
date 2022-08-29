@@ -1,48 +1,45 @@
-import React from "react";
-import "../styles/ContactPage.css";
-import { Prompt } from "react-router-dom";
+import React, { useState } from "react";
 
-class ContactPage extends React.Component {
-  state = { value: "", isEmpty: true };
+const FORM_ENDPOINT =
+	"https://public.herotofu.com/v1/6cd9ee40-2797-11ed-9d54-c9f9d2b00e7b";
+const ContactForm = () => {
+	const [submitted, setSubmitted] = useState(false);
+	const handleSubmit = () => {
+		setTimeout(() => {
+			setSubmitted(true);
+		}, 100);
+	};
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-    this.setState({ value: "", isEmpty: true });
-  };
+	if (submitted) {
+		return (
+			<>
+				<h2>Thank you!</h2>
+				<div>We'll be in touch soon.</div>
+			</>
+		);
+	}
 
-  handleChange = (e) => {
-    if (e.target.value.length > 0) {
-      this.setState({
-        value: e.target.value,
-        isEmpty: false,
-      });
-    } else {
-      this.setState({
-        value: e.target.value,
-        isEmpty: true,
-      });
-    }
-  };
+	return (
+		<form
+			action={FORM_ENDPOINT}
+			onSubmit={handleSubmit}
+			method="POST"
+			target="_blank"
+		>
+			<div>
+				<input type="text" placeholder="Your name" name="name" required />
+			</div>
+			<div>
+				<input type="email" placeholder="Email" name="email" required />
+			</div>
+			<div>
+				<textarea placeholder="Your message" name="message" required />
+			</div>
+			<div>
+				<button type="submit"> Send a message </button>
+			</div>
+		</form>
+	);
+};
 
-  render() {
-    return (
-      <div className="contact">
-        <form onSubmit={this.handleSubmit}>
-          <h3>Napisz do nas</h3>
-          <textarea
-            value={this.state.value}
-            onChange={this.handleChange}
-            placeholder="Napisz wiadomość..."
-          ></textarea>
-          <button>Wyślij</button>
-        </form>
-        <Prompt
-          when={!this.state.isEmpty}
-          message="Masz niewypełniony formularz kontaktowy. Czy na pewno chcesz opuścić stronę?"
-        />
-      </div>
-    );
-  }
-}
-
-export default ContactPage;
+export default ContactForm;

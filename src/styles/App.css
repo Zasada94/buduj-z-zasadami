@@ -13,13 +13,17 @@ main {
 	align-items: center;
 	justify-content: center;
 	flex-grow: 1;
-	margin: 0 0 100px 55px;
+	margin-bottom: 100px;
 	width: 90%;
 	max-width: 1200px;
 	overflow: hidden;
 }
 .blog {
 	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 h3 {
 	text-transform: none;
@@ -34,6 +38,11 @@ article p {
 }
 article h1 {
 	font-size: 28px;
+}
+@media (max-width: 300px) {
+	main {
+		margin: 0 0 50px 20px;
+	}
 }
 
 @media (min-width: 720px) {
@@ -62,5 +71,8 @@ article h1 {
 	}
 	article h1 {
 		font-size: 30px;
+	}
+	.blog {
+		text-align: left;
 	}
 }
