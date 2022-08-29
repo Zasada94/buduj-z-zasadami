@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "360233ce00fdd09e70e5",
-    "url": "/buduj-z-zasadami/static/css/main.463c615e.chunk.css"
+    "revision": "2ea93c98cf66e0004364",
+    "url": "/buduj-z-zasadami/static/css/main.1e4a4dc8.chunk.css"
   },
   {
-    "revision": "360233ce00fdd09e70e5",
-    "url": "/buduj-z-zasadami/static/js/main.360233ce.chunk.js"
+    "revision": "2ea93c98cf66e0004364",
+    "url": "/buduj-z-zasadami/static/js/main.2ea93c98.chunk.js"
   },
   {
     "revision": "981587391077a106d1f0",
     "url": "/buduj-z-zasadami/static/js/runtime~main.98158739.js"
   },
   {
-    "revision": "2673eb6bcb86f48729ca",
-    "url": "/buduj-z-zasadami/static/js/2.2673eb6b.chunk.js"
+    "revision": "ce5ca78f1d2fe156c1d3",
+    "url": "/buduj-z-zasadami/static/js/2.ce5ca78f.chunk.js"
   },
   {
     "revision": "844ca000c7ac544b12e691035cc07064",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/buduj-z-zasadami/static/media/header2.92d9392d.jpg"
   },
   {
-    "revision": "a1afdaa9e9661671a7cf7574c2757457",
+    "revision": "4bed2f0b8b2b96553f802ec6c3ba3f67",
     "url": "/buduj-z-zasadami/index.html"
   }
 ];
