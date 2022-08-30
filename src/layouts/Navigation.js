@@ -6,7 +6,6 @@ const list = [
 	{ name: "start", path: "/", exact: true },
 	{ name: "oferta", path: "/products" },
 	{ name: "kontakt", path: "/contact" },
-	{ name: "log-in", path: "/login" },
 ];
 
 const menu = list.map((item) => (
@@ -17,7 +16,7 @@ const menu = list.map((item) => (
 	</li>
 ));
 const Navigation = () => {
-	const [show, setShow] = React.useState();
+	const [show, setShow] = useState();
 	return (
 		<div className={show ? "show navWrapper" : "navWrapper"}>
 			<nav className="main">
