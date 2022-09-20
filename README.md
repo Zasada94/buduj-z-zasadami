@@ -1,5 +1,5 @@
 # Buduj z zasadami site
-Website showing my enginneering skills offer
+Website showing my engineering skills offer
 
 ## Table of contents
 * [Technologies](#technologies)
