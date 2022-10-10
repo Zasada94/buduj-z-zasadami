@@ -22,11 +22,11 @@ In project You are able to:
 
 
 ## Screens  
-![Screenshot](./images/screenshots/1.png)
+![Screenshot](./src/images/screenshots/1.png)
 
-![Screenshot](./images/screenshots/2.png)
+![Screenshot](./src/images/screenshots/2.png)
 
-![Screenshot](./images/screenshots/3.png)
+![Screenshot](./src/images/screenshots/3.png)
 
 ## Live :star2:
 https://zasada94.github.io/buduj-z-zasadami/
