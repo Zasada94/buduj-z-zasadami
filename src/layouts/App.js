@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../styles/App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import Header from "./Header.js";
 import Navigation from "./Navigation.js";
 import Page from "./Page.js";
@@ -9,7 +9,7 @@ import Footer from "./Footer.js";
 class App extends Component {
 	render() {
 		return (
-			<Router basename={process.env.PUBLIC_URL}>
+			<Router>
 				<div className="app">
 					<header>{<Header />}</header>
 					<main>
